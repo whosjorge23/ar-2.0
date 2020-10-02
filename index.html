@@ -30,10 +30,8 @@
         </a-asset-item>
       </a-assets>
 
-      <a-marker-camera
+      <a-marker
         preset="custom"
-        type="pattern"
-        url="/logo.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -48,7 +46,8 @@
           gesture-handler
         >
         </a-entity>
-      </a-marker-camera>
+      </a-marker>
+      <a-marker-camera preset='custom' type='pattern' url='logo.patt'></a-marker-camera>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
