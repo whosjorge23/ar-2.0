@@ -30,13 +30,14 @@
         </a-asset-item>
       </a-assets>
 
-      <a-marker
+      <!-- <a-marker
         preset="hiro"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
-      >
+      > -->
+      <a-marker-camera preset='custom' type='pattern' url='logo.patt'>
         <a-entity
           id="bowser-model"
           gltf-model="#bowser"
@@ -46,7 +47,8 @@
           gesture-handler
         >
         </a-entity>
-      </a-marker>
+      </a-marker-camera>
+      <!-- </a-marker> -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
